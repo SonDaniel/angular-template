@@ -2,15 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SideNavbarComponent } from './side-navbar/side-navbar.component';
+
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SideNavbarComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, BrowserAnimationsModule,  MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
